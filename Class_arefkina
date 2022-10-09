@@ -1,0 +1,38 @@
+class Table:
+      """
+      Создание и подготовка к работе объекта "Стол"
+      :param width: Ширина стола
+      :param length: Длина стола
+      :param height: Высота стола
+      :param material: Материал стола
+      :param color: Цвет стола
+      """
+    def __init__(self, width, length, height, material, color):
+      self.width = width
+      self.length = length
+      self.height = height
+      self.material = material
+      self.color = color
+
+    def compactness(self, free_place: int) -> int:
+      """
+      Функция, которая проверяет вместится ли стол между стеной и комодом.
+      Если длина стола превышает доступное место,
+      то возвращается численное значение непоместившейся длины
+      :param free_place: Длина от стены до комода
+      :return: Длина непоместившейся части стола
+      """
+
+    def height_func(self) -> bool:
+      """
+      Функция, которая проверяет превышает ли высота стола 75 см.
+      
+      :return: Превышает ли высота стола 75 см
+      """
+    
+    def material_func(self, material_commode: str) -> bool:
+      """
+      Функция, которая проверяет подходит ли материал стола к комоду.
+      :param material_commode: Материал комода
+      :return: Подходят ли комод и стол по материалу
+      """
